@@ -1,5 +1,6 @@
 # The URL of this level: http://www.pythonchallenge.com/pc/def/equality.html
 # Character by character processing，without using re module
+# Written by Wei Xu
 strFile = open("equality.txt",'r') # equality.txt is where the data is
 wholeStr = strFile.read()
 countLeft = 0  # the number of consecutive capital letters on the left side of a small letter
