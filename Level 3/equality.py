@@ -28,7 +28,7 @@ for i in wholeStr:
             countLeft = countRight
             countRight += 1  # simply to bypass the check of countRight == 3 in Line 37
             countLeft += 1
-            resultTemp.append('0') # the 0's and its left letter will be ignored in getting the final result
+            resultTemp.append('0') # the 0's and its left letter will be ignored when getting the final result
         else:
             countLeft += 1
     # if i is small
@@ -42,7 +42,7 @@ for i in wholeStr:
             resultTemp.append('0') 
         countLeft = 0
         countRight = 0
-# get result from resultTemp，i.e. ignoring 0's and its preceding character
+# get result from resultTemp，i.e. ignoring 0's and its preceding single small letter
 prev='0'
 for j in resultTemp:
     if (j !=  '0') and (prev != '0'):
